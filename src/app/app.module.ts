@@ -6,12 +6,20 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SceneComponent } from './scene/scene.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavComponent } from './nav/nav.component';
+import { PlayerComponent } from './scene/player/player.component';
+import { NpcComponent } from './scene/npc/npc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SceneComponent
+    SceneComponent,
+    DashboardComponent,
+    NavComponent,
+    PlayerComponent,
+    NpcComponent
   ],
   imports: [
     BrowserModule,
