@@ -4,31 +4,32 @@
 /*:host {
     display: block;
 }*/
+
+/* holy grail - see https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/ */
+
 .wrapper {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  /* holy grail - like HolyGrail-body */
+  flex: 1;
+  /*flex-flow: row nowrap;
+  justify-content: space-between;*/
   background-color: black;
 }
-header {
-    font-size: 1em;
-    line-height: 2em;
-    width: 250px;
-    flex-shrink: 2;
-}
+
+/* main is the rough app simulation */
 main {
+    /* holy grail - like HolyGrail-content */
+    flex: 1;
     height: 700px;
-    width: 525px;
+    /*width: 525px;*/
     padding: 10px;
     margin-top: 10px;
     background-color: #343531;
 }
 footer {
-  align-self: flex-end;
-  color: #666;
+    color: #666;
     text-align: right;
     padding-right: 1em;
     font-size: 0.8em;
-    /*width: 250px;*/
-    flex-shrink: 2;
+    background-color: darkblue;
 }

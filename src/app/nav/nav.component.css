@@ -1,11 +1,16 @@
 nav {
+  /* holy grail - like .HolyGrail-nav */
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  /* put the nav on the left (is it necessary for mine?) */
+  order: -1;
   background-color: darkslateblue;
 }
 nav a {
   padding: 0 10px;
   text-decoration: none;
   margin: 10px 0 0 10px;
-  display: inline-block;
+  /*display: inline-block;*/
   background-color: #343531;
   border-radius: 4px;
 }

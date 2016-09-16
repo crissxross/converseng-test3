@@ -2,9 +2,15 @@
 
 @import 'assets/normalize.css';
 
+/* Re. holy grail layout - see https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/ */
+
 body {
   color: #ccc;
   background-color: #252525;
+  /* holy grail - like HolyGrail class */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 a {
     color: #5EA0B6;

@@ -1,3 +1,7 @@
 .dashboard {
   background-color: darkolivegreen;
+  /* holy grail - 12em is the width of the columns */
+  flex: 0 0 12em;
 }
+
+/* the above is like .HolyGrail-ads*/
