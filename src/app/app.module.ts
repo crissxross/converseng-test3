@@ -2,31 +2,48 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { Store, StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { SceneComponent } from './scene/scene.component';
+import { routing, appRoutingProviders } from './app.routing';
+import { CoreModule } from './core/core.module';
+import { HomeModule } from './home/home.module';
+import { SceneModule } from './scene/scene.module';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavComponent } from './nav/nav.component';
-import { PlayerComponent } from './scene/player/player.component';
-import { NpcComponent } from './scene/npc/npc.component';
+import { counterReducer } from './core/counter.reducer';
+
+/**
+ * NGRX
+ * In app's main module, import your reducers and use the
+ * StoreModule.provideStore({reducers}, {initialState})
+ * function to provide them to Angular's injector.
+ */
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    SceneComponent,
     DashboardComponent,
-    NavComponent,
-    PlayerComponent,
-    NpcComponent
+    NavComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing,
+    CoreModule,
+    HomeModule,
+    SceneModule,
+    StoreModule.provideStore(
+      {
+        counterReduc: counterReducer
+      }
+    )
   ],
-  providers: [],
+  providers: [
+    appRoutingProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

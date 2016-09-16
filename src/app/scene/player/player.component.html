@@ -1,3 +1,16 @@
-<p>
-  player works!
-</p>
+<div class="player-wrapper">
+  <p class="player-speaks">
+    {{ pTurn | async }} player works!
+  </p>
+  <div class="thinks">
+    <p>{{ pThought | async }}</p>
+    <div class="options">
+      <ul>
+        <li *ngFor="let option of pOptions | async">
+          <button (click)="selectOption(option)">
+              {{ option[1] }}</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

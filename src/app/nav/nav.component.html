@@ -1,5 +1,11 @@
 <nav>
-<p>
-  nav works!
-</p>
+  <p>nav works!</p>
+  <ul>
+    <li>
+      <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['/scene', '1']" routerLinkActive="active">Scene 1 </a>
+    </li>
+  </ul>
 </nav>
