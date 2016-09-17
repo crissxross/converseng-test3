@@ -1,15 +1,20 @@
+/* nav is a flex item - also a container but doesn't need to be flex */
 nav {
-  /* holy grail - like .HolyGrail-nav */
-  /* 12em is the width of the columns */
-  flex: 0 0 12em;
-  /* put the nav on the left (is it necessary for mine?) */
-  order: -1;
-  background-color: darkslateblue;
+  flex: 1;
+  padding: 1em;
+  background-color: darkslateblue; /* for testing */
+}
+ul, li {
+  margin: 0;
+  padding: 1em 0;
+}
+ul {
+	list-style: none;
 }
 nav a {
   padding: 0 10px;
   text-decoration: none;
-  margin: 10px 0 0 10px;
+  /*margin: 10px 0 0 10px;*/
   /*display: inline-block;*/
   background-color: #343531;
   border-radius: 4px;

@@ -1,7 +1,8 @@
-.dashboard {
+:host {
+  display: flex;
+  flex-direction: column;
+  /* it's a flex item */
+  flex: 1;
+  padding: 1em;
   background-color: darkolivegreen;
-  /* holy grail - 12em is the width of the columns */
-  flex: 0 0 12em;
 }
-
-/* the above is like .HolyGrail-ads*/

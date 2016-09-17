@@ -1,27 +1,16 @@
 /* HOW MUCH OF THIS IS STILL RELEVANT? */
 
 /*styles applied on :host are applied on the current component, "app" in this case*/
-/*:host {
-    display: block;
-}*/
-
-/* holy grail - see https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/ */
-
-.wrapper {
-  display: flex;
-  /* holy grail - like HolyGrail-body */
-  flex: 1;
-  /*flex-flow: row nowrap;
-  justify-content: space-between;*/
-  background-color: black;
+:host {
+    display: flex;
+    flex: 1;
+    /*background: black;*/ /* just for testing */
 }
 
-/* main is the rough app simulation */
+/* main is mobile app approx simulation */
 main {
-    /* holy grail - like HolyGrail-content */
-    flex: 1;
+    flex: 0 0 32em;;
     height: 700px;
-    /*width: 525px;*/
     padding: 10px;
     margin-top: 10px;
     background-color: #343531;

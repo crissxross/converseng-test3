@@ -1,45 +1,51 @@
-/* HOW MUCH OF THIS IS STILL RELEVANT? */
-
 * {
   box-sizing: border-box;
-  /*margin-top: 0;*/
 }
-.player-wrapper {
+/* player is a flex container */
+:host {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: space-between;
+  /* also a flex item */
+  flex: 1;
+  height: 50%;
   color: #2E2E2C;
   background-color: #BFBFB8;
   padding: 1em;
-  min-height: 350px;
   border-radius: 10px;
 }
 .player-speaks {
   color: #2E2E2C;
 }
+/* .thinks is a flex container */
 .thinks {
+  display: flex;
+  flex-direction: column;
   font-style: italic;
 }
 .options {
-  display: flex;
-  /*flex-flow: row nowrap;*/ /* <- default behaviour */
-  /*justify-content: space-between;*/
+/* is this padding needed? */
   padding: 0;
 }
+/* ul is a flex container for the li buttons */
 ul {
   display: flex;
-  /*flex-flow: row nowrap;*/ /* <- default behaviour */
   justify-content: space-between;
   list-style: none;
   padding: 0;
 }
-li {
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+/*li {
   flex: 1 100%;
   display: flex;
   justify-content: space-between;
   padding: 4px;
-}
+}*/
 button {
+  /* does button need to be a flex item? */
   flex: 1 100%;
   color: #2E2E2C;
   background-color: #ADADA8;

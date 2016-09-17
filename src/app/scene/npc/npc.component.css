@@ -1,18 +1,19 @@
-/* HOW MUCH OF THIS IS STILL RELEVANT? */
-
 * {
   box-sizing: border-box;
-  /*margin-top: 0;*/
 }
-.npc-wrapper {
+/* npc is a flex container */
+:host {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* also a flex item */
+  flex: 1;
   color: #121111;
   background-color: #989295;
   padding: 1em;
-  min-height: 350px;
+  /*min-height: 350px;*/
   border-radius: 10px;
 }
-.npc-speaks {
-  align-self: flex-end;
-}
+/*.npc-speaks {*/
+  /*align-self: flex-end;*/
+/*}*/
