@@ -4,5 +4,5 @@
   /* it's a flex item */
   flex: 1;
   padding: 1em;
-  background-color: darkolivegreen;
+  /*border: 1px solid #000;*/
 }

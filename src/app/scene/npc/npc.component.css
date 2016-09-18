@@ -11,9 +11,9 @@
   color: #121111;
   background-color: #989295;
   padding: 1em;
-  /*min-height: 350px;*/
   border-radius: 10px;
 }
-/*.npc-speaks {*/
-  /*align-self: flex-end;*/
-/*}*/
+/*.npc-speaks bg colour for testing only*/
+/*.npc-speaks {
+  background: rgba(140, 110, 110, 0.3);
+}*/

@@ -3,23 +3,16 @@
 @import 'assets/normalize.css';
 
 body {
+  display: flex;
+  flex-direction: column;
   color: #ccc;
   background-color: #252525;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
 }
+
 a {
     color: #5EA0B6;
-}
-/* reset css - are these necessary? */
-ul, li {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-ul {
-	list-style: none;
 }
 
 button {
@@ -40,4 +33,11 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+footer {
+    padding: 0.625em 1em;
+    color: #666;
+    text-align: right;
+    font-size: 0.8em;
 }

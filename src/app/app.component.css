@@ -1,10 +1,8 @@
-/* HOW MUCH OF THIS IS STILL RELEVANT? */
-
 /*styles applied on :host are applied on the current component, "app" in this case*/
+
 :host {
     display: flex;
     flex: 1;
-    /*background: black;*/ /* just for testing */
 }
 
 /* main is mobile app approx simulation */
@@ -14,11 +12,4 @@ main {
     padding: 10px;
     margin-top: 10px;
     background-color: #343531;
-}
-footer {
-    color: #666;
-    text-align: right;
-    padding-right: 1em;
-    font-size: 0.8em;
-    background-color: darkblue;
 }

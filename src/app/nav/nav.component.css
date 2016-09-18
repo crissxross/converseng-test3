@@ -1,21 +1,21 @@
-/* nav is a flex item - also a container but doesn't need to be flex */
-nav {
+/* :host is a flex item but no need to be a flex container */
+:host {
   flex: 1;
   padding: 1em;
-  background-color: darkslateblue; /* for testing */
-}
-ul, li {
-  margin: 0;
-  padding: 1em 0;
 }
 ul {
+  margin: 0;
+  padding: 0;
 	list-style: none;
 }
+li {
+  margin: 0;
+  padding: 0.875em 0;
+}
 nav a {
-  padding: 0 10px;
+  font-size: 0.875em;
+  padding: 10px;
   text-decoration: none;
-  /*margin: 10px 0 0 10px;*/
-  /*display: inline-block;*/
   background-color: #343531;
   border-radius: 4px;
 }

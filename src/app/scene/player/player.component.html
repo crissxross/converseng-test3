@@ -1,14 +1,20 @@
-  <p class="player-speaks">
-    {{ pTurn | async }} player works!
-  </p>
-  <div class="thinks">
-    <p>{{ pThought | async }}</p>
-    <div class="options">
-      <ul>
-        <li *ngFor="let option of pOptions | async">
+<div class="player-speaks">
+  <p>{{ pTurn | async }} player speaks to test this CSS!</p>
+</div>
+
+<div class="thinks">
+  <p>{{ pThought | async }} Thinking a thought about testing CSS.</p>
+</div>
+
+<div class="options">
+  <ul>
+    <!--<li *ngFor="let option of pOptions | async">
           <button (click)="selectOption(option)">
               {{ option[1] }}</button>
-        </li>
-      </ul>
-    </div>
-  </div>
+        </li>-->
+    <!-- for testing css -->
+    <li><button>Is it option 1 optimal op?</button></li>
+    <li><button>Option 2 overkill vk?</button></li>
+    <li><button>Is it option 3 under-par un? Is option 3 under-par un?</button></li>
+  </ul>
+</div>
