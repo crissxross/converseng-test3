@@ -8,7 +8,7 @@ const sceneRoutes: Routes = [
   {
     path: 'scene/:id',
     component: SceneComponent,
-    resolve: { scene: SceneResolveService }
+    resolve: { sc: SceneResolveService }
   }
 ];
 

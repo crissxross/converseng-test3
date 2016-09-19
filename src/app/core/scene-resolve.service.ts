@@ -7,14 +7,17 @@ import '../rxjs-operators';
 @Injectable()
 export class SceneResolveService implements Resolve<any> {
 
-  constructor(private scdata: ScenedataService, private router: Router) { }
+  constructor(
+    private scdataService: ScenedataService,
+    private router: Router
+  ) { }
 
   resolve(route: ActivatedRouteSnapshot): Observable<any> | Promise<any> | any {
     let id = +route.params['id'];
 
-    return this.scdata.getSceneData(id)
-      .map(data => data.scene)
-      .do(data => console.log('RESOLVED scene data:', data));
+    return this.scdataService.getSceneData(id)
+      .map(data => data.scenedata)
+      .do(data => console.log('RESOLVED sc data:', data));
       // .share();
   }
 
