@@ -12,7 +12,8 @@ import { SceneModule } from './scene/scene.module';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavComponent } from './nav/nav.component';
-import { counterReducer } from './core/counter.reducer';
+import { convoReducer } from './core/convo.reducer';
+import { counterReducer } from './core/counter.reducer'; // testing
 
 /**
  * NGRX
@@ -37,6 +38,7 @@ import { counterReducer } from './core/counter.reducer';
     SceneModule,
     StoreModule.provideStore(
       {
+        convoReduc: convoReducer,
         counterReduc: counterReducer
       }
     )

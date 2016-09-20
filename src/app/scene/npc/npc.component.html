@@ -1,3 +1,10 @@
-  <div class="npc-speaks">
-    <p>{{ npcTurn | async }} npc speaks for testing! This is a 'p' in a 'div'.</p>
-  </div>
+
+<!-- Should npcTurn be a custom event emitter? i.e. an output, passing an $event? See examples in harmonics-explorer - e.g. partial.component or main-menu.component -->
+
+<!-- For example:
+  (someCustomEvent)="npcTurn.emit(actor)"
+I don't know if that is correct - need to find out more !!!! -->
+
+<div class="npc-speaks">
+  <p>{{ npcSpeaks | async }} npc speaks for testing! This is a 'p' in a 'div'.</p>
+</div>
