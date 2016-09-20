@@ -1,0 +1,35 @@
+
+TO DO - main tasks:
+
+  ☐ In ConvoReducer (etc), implement FIRST_ROUND & NEXT_ROUND (&/or NEXT_TURN) first, having all the lines of text appear at once, and then SELECT_OPTION which triggers NEXT_ROUND. I.E. start simple!
+
+  ☐ Then refine the way the _SPEAKS & _THINKS appear within the ROUNDS (FIRST, NEXT & LAST)
+
+  ☐ create a model for conversation and/or ConvoRound or ConvoTurn - see book model in ngrx/example-app for inspiration.
+
+To do's copied from previous version:
+  ☐ CHECK THESE TO DOs ARE STILL RELEVANT:
+  ☐ Add a fromEvent observable for player-options button clicks.
+  ☐ Add a more sophisticate observable mechanism for the timing and sequencing of the turns in the conversation.
+
+ngrx & conversengine To Do:
+  ☐ Stub out the ACTIONS that will apply to my convo REDUCER to give a blueprint of the updates I need to implement
+
+Redesign or Refactoring ideas:
+  ☐ PLAYER OPTIONS - instead of being in an array, should the playerOptions be an object with key value pairs - the keys being: op, vk, un ? OR should Player-Options be an array (*ngFor) of objects with nested values?
+  ☐ OP / VK / UN - should these be Typescript Enums? (see Angular University Section 9 on Forms lesson 35)
+  ☐ Should player op/vk/un options use Angular Forms module? - i.e. Reactive Model Driven Forms
+
+Angular / RxJS notes:
+
+
+ngrx & other libraries:
+  ✔ Install ngrx/store & ngrx/effects & ngrx/router-store @done
+  ☐ Start using ngrx/effects
+  ☐ Start using ngrx/router-store
+
+Updates to do:
+  ✔ Angular 2.0.0 final! @done
+
+Learn more about:
+  ☐ Typescript Enums

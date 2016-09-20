@@ -30,6 +30,11 @@ export const PLAYER_THINKS = 'PLAYER_THINKS';
 export const PLAYER_OPTIONS = 'PLAYER_OPTIONS';
 export const SELECT_OPTION = 'SELECT_OPTION';
 
+// ACTION definitions that might be more useful than some of the ones above (SEE diagram in ConversEngine-StiU.scap):
+export const FIRST_ROUND = 'FIRST_ROUND';
+export const NEXT_ROUND = 'NEXT_ROUND';
+export const LAST_ROUND = 'LAST_ROUND';
+
 // TODO: I need to add an AppState model for my ActionReducer ?
 // TODO: I could pass in an initState function to convoReducer ?
 
