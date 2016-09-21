@@ -1,15 +1,13 @@
 <app-npc
   [npcSpeaks]="npcSpeaks"
-  (npcTurn)="npcTurn($event)"
 >
 </app-npc>
 <app-player
   [playerSpeaks]="playerSpeaks"
   [playerThinks]="playerThinks"
   [playerOptions]="playerOptions"
-  (playerTurn)="playerTurn($event)"
-  (selectOption)="selectOption(option)"
 >
+  <!-- (selectOption)="selectOption(option)" -->
 </app-player>
 
 <!-- extra is only for testing -->

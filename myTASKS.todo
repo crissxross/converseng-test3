@@ -7,6 +7,12 @@ TO DO - main tasks:
 
   ☐ create a model for conversation and/or ConvoRound or ConvoTurn - see book model in ngrx/example-app for inspiration.
 
+Discarded or Changed Stuff - to check:
+  ☐ ACTION definitions that I've discarded in favour of more useful ones in convo.reducer.ts (SEE diagram in ConversEngine-StiU.scap):
+    ☐ export const START_CONVO = 'START_CONVO';
+    ☐ export const NPC_TURN = 'NPC_TURN';
+    ☐ export const PLAYER_TURN = 'PLAYER_TURN';
+
 To do's copied from previous version:
   ☐ CHECK THESE TO DOs ARE STILL RELEVANT:
   ☐ Add a fromEvent observable for player-options button clicks.
@@ -33,3 +39,10 @@ Updates to do:
 
 Learn more about:
   ☐ Typescript Enums
+
+NOTES:
+  ACTION (as defined in ngrx/store dispatcher.ts):
+    export interface Action {
+      type: string;
+      payload?: any;
+    }

@@ -4,16 +4,16 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import {
-  START_CONVO,
+  FIRST_ROUND,
+  NEXT_ROUND,
   NEXT_TURN,
-  NPC_TURN,
-  PLAYER_TURN,
   NPC_SPEAKS,
   PLAYER_SPEAKS,
   PLAYER_THINKS,
   PLAYER_OPTIONS,
-  SELECT_OPTION
+  CHOOSE_OPTION
 } from '../core/convo.reducer';
+// Do I need to import convoReducer or is it available here via StoreModule.provideStore(...) ???
 
 /**
  * Smart components
@@ -32,8 +32,30 @@ import {
 
 @Component({
   selector: 'app-scene',
-  templateUrl: './scene.component.html',
-  styleUrls: ['./scene.component.css']
+  // templateUrl: './scene.component.html',
+  styleUrls: ['./scene.component.css'],
+  template: `
+    <app-npc
+      [npcSpeaks]="npcSpeaks"
+    >
+    </app-npc>
+    <app-player
+      [playerSpeaks]="playerSpeaks"
+      [playerThinks]="playerThinks"
+      [playerOptions]="playerOptions"
+    >
+      <!-- (selectOption)="selectOption(option)" -->
+    </app-player>
+
+    <!-- extra is only for testing -->
+    <div class="extra">
+    <small>Scene {{ (scdata | async).sc.meta.id }} description:
+      {{ (scdata | async).sc.meta.description }}
+      Actors: {{ (scdata | async).sc.meta.actors }}
+      <pre>{{ scdata | async | json }}</pre>
+      </small>
+    </div>
+  `
 })
 export class SceneComponent implements OnInit {
   scdata;
@@ -46,7 +68,7 @@ export class SceneComponent implements OnInit {
     private router: Router, // Do I need Router here? What for?
     private store: Store<any>
   ) {
-    this.convo$ = store.select('convo');
+    this.convo$ = store.select('convoReduc');
    }
 
    // scdata stores all of the scene data resolved by the router.
@@ -54,30 +76,23 @@ export class SceneComponent implements OnInit {
     this.scdata = this.route.data;
   }
 
-  // SHOULD I BE USING EFFECTS ?????
+  // Should I be using EFFECTS ?????
 
   // All state-changing ACTIONS get dispatched to & handled by REDUCERS:
+  firstRound() {
+    this.store.dispatch({ type: FIRST_ROUND,
+      // payload: ?
+    });
+  }
 
-  startConvo() {
-    this.store.dispatch({ type: START_CONVO,
+  nextRound() {
+    this.store.dispatch({ type: NEXT_ROUND,
       // payload: ?
     });
   }
 
   nextTurn() {
     this.store.dispatch({ type: NEXT_TURN,
-      // payload: ?
-    });
-  }
-
-  npcTurn() {
-    this.store.dispatch({ type: NPC_TURN,
-      // payload: ?
-    });
-  }
-
-  playerTurn() {
-    this.store.dispatch({ type: PLAYER_TURN,
       // payload: ?
     });
   }
@@ -106,9 +121,9 @@ export class SceneComponent implements OnInit {
     });
   }
 
-  selectOption(option) {
-    this.store.dispatch({ type: SELECT_OPTION,
-      payload: option
+  chooseOption(option) {
+    this.store.dispatch({ type: CHOOSE_OPTION,
+      // payload: option
     });
   }
 

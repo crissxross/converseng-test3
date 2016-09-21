@@ -2,22 +2,24 @@
 <!-- Should playerTurn be a custom event emitter? i.e. an output passing an $event?  See examples in harmonics-explorer - e.g. partial.component or main-menu.component -->
 
 <div class="player-speaks">
-  <p>{{ playerSpeaks | async }} player speaks to test this CSS!</p>
+  <p>{{ playerSpeaks | async }}</p>
+  <p>player speaks to test this CSS!</p>
 </div>
 
 <div class="thinks">
-  <p>{{ playerThinks | async }} Thinking a thought about testing CSS.</p>
+  <p>{{ playerThinks | async }}</p>
+  <p>Thinking a thought about testing CSS.</p>
 </div>
 
 <div class="options">
   <ul>
     <li *ngFor="let option of playerOptions | async">
-          <button (click)="selectOption(option)">
+          <button (click)="onChoose(option)">
               {{ option[1] }}</button>
     </li>
-    <!-- for testing css -->
-    <li><button>Is it option 1 optimal op?</button></li>
+    <!-- Only for TESTing CSS -->
+    <li><button>Test option 1 optimal op?</button></li>
     <li><button>Option 2 overkill vk?</button></li>
-    <li><button>Is it option 3 under-par un? Is option 3 under-par un?</button></li>
+    <li><button>Test option 3 under-par un? Is option 3 under-par un?</button></li>
   </ul>
 </div>
