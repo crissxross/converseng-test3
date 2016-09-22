@@ -1,12 +1,12 @@
 # Conversengine
 
-A prototype of the conversation engine that will drive my interactive narratives.
+A prototype of the conversation engine (currently just a part of it) that will eventually drive my interactive narratives.
 
 Based on my earlier versions, this is a fresh start using Angular 2 final! :) and ngrx.
 
 *WIP*
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.14.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
