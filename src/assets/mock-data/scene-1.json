@@ -2,7 +2,7 @@
   "scenedata": {
     "meta": {
       "id": "1",
-      "description": "Test convo-dialogue.",
+      "description": "SCENE ONE *new structure* for test convo-dialogue.",
       "actors": ["npc", "player"],
       "location": "default location"
     },
@@ -10,103 +10,123 @@
       {
         "actor": "npc",
         "says": [
-          ["op", "OP 1N-says NPC's first speech in scene 01"],
-          ["vk", "VK 1N-says NPC's first speech in scene 01"],
-          ["un", "UN 1N-says NPC's first speech in scene 01"]
+          ["OP", "1N-says NPC's first speech in scene one *OP"],
+          ["VK", "1N-says NPC's first speech in scene one *VK"],
+          ["UN", "1N-says NPC's first speech in scene one *UN"]
         ]
       },
       {
         "actor": "player",
         "thinks": [
-          ["op", "OP p1 thinks a first thought in scene 01"],
-          ["vk", "VK p1 thinks a first thought in scene 01"],
-          ["un", "UN p1 thinks a first thought in scene 01"]
-        ],
+          ["OP", "p1 thinks a first thought in scene one *OP"],
+          ["VK", "p1 thinks a first thought in scene one *VK"],
+          ["UN", "p1 thinks a first thought in scene one *UN"]
+        ]
+      },
+      {
+        "actor": "player",
         "options": [
-          ["op", "OP option 1 for P1"],
-          ["un", "UN option 3 for P1"]
-        ],
+          ["OP", "option 1 for P1 in scene one *OP"],
+          ["UN", "option for P1 in scene one *UN"]
+        ]
+      },
+      {
+        "actor": "player",
         "says": [
-          ["op", "OP 1P-says player's first speech in scene 01"],
-          ["vk", "VK 1P-says player's first speech in scene 01"],
-          ["un", "UN 1P-says player's first speech in scene 01"]
+          ["OP", "1P-says player's first speech in scene one *OP"],
+          ["UN", "1P-says player's first speech in scene one *UN"]
         ]
       },
       {
         "actor": "npc",
         "says": [
-          ["op", "OP 2N-says NPC's second speech"],
-          ["vk", "VK 2N-says NPC's second speech"],
-          ["un", "UN 2N-says NPC's second speech"]
+          ["OP", "2N-says NPC's second speech in scene one *OP"],
+          ["UN", "2N-says NPC's second speech in scene one *UN"]
         ]
       },
       {
         "actor": "player",
         "thinks": [
-          ["op", "OP p2 thinks a second thought"],
-          ["vk", "VK p2 thinks a second thought"],
-          ["un", "UN p2 thinks a second thought"]
-        ],
+          ["OP", "p2 thinks a second thought in scene one *OP"],
+          ["UN", "p2 thinks a second thought in scene one *UN"]
+        ]
+      },
+      {
+        "actor": "player",
         "options": [
-          ["op", "OP option 1 for P2"],
-          ["vk", "VK option 2 for P2"],
-          ["un", "UN option 3 for P2"]
-        ],
+          ["OP", "option 1 for P2 in scene one *OP"],
+          ["VK", "option 2 for P2 in scene one *VK"],
+          ["UN", "option 3 for P2 in scene one *UN"]
+        ]
+      },
+      {
+        "actor": "player",
         "says": [
-          ["op", "OP 2P-says player's second speech"],
-          ["vk", "VK 2P-says player's second speech"],
-          ["un", "UN 2P-says player's second speech"]
+          ["OP", "2P-says player's second speech in scene one *OP"],
+          ["VK", "2P-says player's second speech in scene one *VK"],
+          ["UN", "2P-says player's second speech in scene one *UN"]
         ]
       },
       {
         "actor": "npc",
         "says": [
-          ["op", "OP 3N-says NPC's third speech"],
-          ["vk", "VK 3N-says NPC's third speech"],
-          ["un", "UN 3N-says NPC's third speech"]
+          ["OP", "3N-says NPC's third speech in scene one *OP"],
+          ["VK", "3N-says NPC's third speech in scene one *VK"],
+          ["UN", "3N-says NPC's third speech in scene one *UN"]
         ]
       },
       {
         "actor": "player",
         "thinks": [
-          ["op", "OP p3 thinks a third thought."],
-          ["vk", "VK p3 thinks a third thought"],
-          ["un", "UN p3 thinks a third thought"]
-        ],
+          ["OP", "p3 thinks a third thought in scene one *OP"],
+          ["VK", "p3 thinks a third thought in scene one *VK"],
+          ["UN", "p3 thinks a third thought in scene one *UN"]
+        ]
+      },
+      {
+        "actor": "player",
         "options": [
-          ["op", "OP option 1 for P3"],
-          ["vk", "VK option 2 for P3"],
-          ["un", "UN a 3rd option for P3"]
-        ],
+          ["OP", "option 1 for P3 in scene one *OP"],
+          ["VK", "option 2 for P3 in scene one *VK"],
+          ["UN", "a 3rd option for P3 in scene one *UN"]
+        ]
+      },
+      {
+        "actor": "player",
         "says": [
-          ["op", "OP 3P-says player's third speech"],
-          ["vk", "VK 3P-says player's third speech"],
-          ["un", "UN 3P-says player's third speech"]
+          ["OP", "3P-says player's third speech in scene one *OP"],
+          ["VK", "3P-says player's third speech in scene one *VK"],
+          ["UN", "3P-says player's third speech in scene one *UN"]
         ]
       },
       {
         "actor": "npc",
         "says": [
-          ["op", "OP 4N-says NPC's fourth speech"],
-          ["vk", "VK 4N-says NPC's fourth speech"],
-          ["un", "UN 4N-says NPC's fourth speech"]
+          ["OP", "4N-says NPC's fourth speech in scene one *OP"],
+          ["VK", "4N-says NPC's fourth speech in scene one *VK"],
+          ["UN", "4N-says NPC's fourth speech in scene one *UN"]
         ]
       },
       {
         "actor": "player",
         "thinks": [
-          ["op", "OP p4 thinks a fourth thought."],
-          ["vk", "VK p4 thinks a fourth thought"],
-          ["un", "UN p4 thinks a fourth thought"]
-        ],
+          ["OP", "p4 thinks a fourth thought in scene one *OP"],
+          ["VK", "p4 thinks a fourth thought in scene one *VK"],
+          ["UN", "p4 thinks a fourth thought in scene one *UN"]
+        ]
+      },
+      {
+        "actor": "player",
         "options": [
-          ["op", "OP option 1 for P4"],
-          ["vk", "VK option 2 for P4"]
-        ],
+          ["OP", "option 1 for P4 in scene one *OP"],
+          ["VK", "option 2 for P4 in scene one *VK"]
+        ]
+      },
+      {
+        "actor": "player",
         "says": [
-          ["op", "OP 4P-says player's fourth speech."],
-          ["vk", "VK 4P-says player's fourth speech."],
-          ["un", "UN 4P-says player's fourth speech."]
+          ["OP", "4P-says player's fourth speech in scene one *OP"],
+          ["VK", "4P-says player's fourth speech in scene one *VK"]
         ]
       }
     ]
