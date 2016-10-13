@@ -1,6 +1,6 @@
-* {
+/** {
   box-sizing: border-box;
-}
+}*/
 /* :host player is a flex container */
 :host {
   display: flex;

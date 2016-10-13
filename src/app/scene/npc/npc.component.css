@@ -1,6 +1,6 @@
-* {
+/** {
   box-sizing: border-box;
-}
+}*/
 /* npc is a flex container */
 :host {
   display: flex;

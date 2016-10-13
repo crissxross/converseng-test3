@@ -1,7 +1,7 @@
 /* Is box-sizing necessary? */
-* {
+/** {
   box-sizing: border-box;
-}
+}*/
 /* scene is a flex container */
 :host {
   display: flex;
@@ -13,5 +13,11 @@
 .extra {
   color: #8e8e8e;
   position: absolute;
-  top: 740px;
+  /*top: 740px;*/
+  top: 730px;
+  font-size: 0.75em;
+}
+
+.big {
+  font-size: 1em;
 }
