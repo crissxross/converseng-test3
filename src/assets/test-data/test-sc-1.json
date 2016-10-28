@@ -1,0 +1,60 @@
+{
+  "scenedata": {
+    "meta": {
+      "id": "1",
+      "description": "SCENE ONE *new structure* for test convo-dialogue.",
+      "actors": ["npc", "player"],
+      "location": "default location"
+    },
+    "convo": [
+      {
+        "actor": "npc",
+        "actionType": "SAYS",
+        "OP": "1N-says NPC's first speech in scene one *OP",
+        "VK": "1N-says NPC's first speech in scene one *VK",
+        "UN": "1N-says NPC's first speech in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "VK": [2, 3, 1],
+          "UN": [3, 2, 1]
+        }
+      },
+      {
+        "actor": "player",
+        "actionType": "THINKS",
+        "OP": "p1 thinks a first thought in scene one *OP",
+        "VK": "p1 thinks a first thought in scene one *VK",
+        "UN": "p1 thinks a first thought in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "VK": [2, 3, 1],
+          "UN": [3, 2, 1]
+        }
+      },
+      {
+        "actor": "player",
+        "actionType": "OPTIONS",
+        "OP": "option 1 for P1 in scene one *OP",
+        "VK": "option 1 for P1 in scene one *VK",
+        "UN": "option for P1 in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "VK": [2, 3, 1],
+          "UN": [3, 2, 1]
+        }
+      },
+      {
+        "actor": "player",
+        "actionType": "SAYS",
+        "OP": "1P-says player's first speech in scene one *OP",
+        "VK": "1P-says player's first speech in scene one *VK",
+        "UN": "1P-says player's first speech in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "VK": [2, 3, 1],
+          "UN": [3, 2, 1]
+        }
+      }
+    ]
+  }
+}

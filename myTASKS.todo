@@ -40,9 +40,3 @@ Updates to do:
 Learn more about:
   ☐ Typescript Enums
 
-NOTES:
-  ACTION (as defined in ngrx/store dispatcher.ts):
-    export interface Action {
-      type: string;
-      payload?: any;
-    }

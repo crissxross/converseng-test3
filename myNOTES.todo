@@ -1,0 +1,73 @@
+NOTES:
+
+  ACTION (as defined in ngrx/store dispatcher.ts):
+    export interface Action {
+      type: string;
+      payload?: any;
+    }
+
+Variations for scene-#.json JSON DATA structure:
+
+  "convo": [
+      {
+        "actor": "npc",
+        "actionType": "SAYS",
+        "OP": "1N-says NPC's first speech in scene one *OP",
+        "VK": "1N-says NPC's first speech in scene one *VK",
+        "UN": "1N-says NPC's first speech in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "VK": [2, 3, 1],
+          "UN": [3, 2, 1]
+      },
+      {
+        "actor": "player",
+        "actionType": "THINKS",
+        "OP": "p1 thinks a first thought in scene one *OP",
+        "VK": "p1 thinks a first thought in scene one *VK",
+        "UN": "p1 thinks a first thought in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "VK": [2, 3, 1],
+          "UN": [3, 2, 1]
+      },
+      {
+        "actor": "player",
+        "actionType": "OPTIONS",
+        "OP": "option 1 for P1 in scene one *OP",
+        "UN": "option for P1 in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "UN": [3, 2, 1]
+      },
+      {
+        "actor": "player",
+        "actionType": "SAYS",
+        "OP": "1P-says player's first speech in scene one *OP",
+        "UN": "1P-says player's first speech in scene one *UN",
+        "PAD": {
+          "OP": [1, 2, 3],
+          "UN": [3, 2, 1]
+      },
+
+Another variation:
+  This based on this artical - https://hackernoon.com/avoiding-accidental-complexity-when-structuring-your-app-state-6e6d22ad5e2a#.2ials051f
+
+  "convoById": {
+    "1": {
+      "actor": "npc",
+      "actionType": "SAYS",
+      "OP": {
+        "text": "1N-says NPC's first speech in scene one *OP",
+        "PAD": [1, 2, 3]
+      },
+      "VK": {
+        "text" : "1N-says NPC's first speech in scene one *VK",
+        "PAD": [2, 3, 1]
+      },
+      "UN": {
+        "text" : "1N-says NPC's first speech in scene one *UN",
+        "PAD": [3, 2, 1]
+        }
+      },
+      etc...
