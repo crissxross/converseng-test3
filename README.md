@@ -4,11 +4,12 @@ A prototype of the conversation engine (currently just a part of it) that will e
 
 Based on my earlier versions, this is a fresh start using Angular 2 final! :) and ngrx.
 
-*WIP*
+This is *WIP*
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
 ## Development server
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
