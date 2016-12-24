@@ -6,7 +6,7 @@ Based on my earlier versions, this is a fresh start using Angular 2 final! :) an
 
 This is *WIP*
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
 ## Development server
 
