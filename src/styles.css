@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import 'assets/normalize.css';
+/*@import 'assets/normalize.css';*/
+/* import from node_modules instead - this should work: */
+@import '~normalize.css/normalize.css';
 
 body {
   display: flex;

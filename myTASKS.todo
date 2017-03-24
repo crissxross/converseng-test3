@@ -36,6 +36,8 @@ ngrx & other libraries:
 
 Updates to do:
   ✔ Angular 2.0.0 final! @done
+  ☐ FIX the errors resulting after update to cli & angular 2.4.1:
+    * To see what they are run ng serve
 
 Learn more about:
   ☐ Typescript Enums
