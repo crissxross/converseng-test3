@@ -1,10 +1,12 @@
-# Conversengine
+# Converseng-test3
+
+*No longer in active development.*
 
 A prototype of the conversation engine (currently just a part of it) that will eventually drive my interactive narratives.
 
 Based on my earlier versions, this is a fresh start using Angular 2 final! :) and ngrx.
 
-This is *WIP*
+~~This is *WIP*~~ *I'm switching development to a new repo.*
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
